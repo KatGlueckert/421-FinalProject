@@ -9915,11 +9915,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Junior Year\\MIS 431\\Lecture 9 - End\\Uplift\\Uplift.csproj",
+      "projectUniqueName": "C:\\Junior Year\\MIS 431\\421FinalProject\\Uplift\\Uplift.csproj",
       "projectName": "Uplift",
-      "projectPath": "C:\\Junior Year\\MIS 431\\Lecture 9 - End\\Uplift\\Uplift.csproj",
+      "projectPath": "C:\\Junior Year\\MIS 431\\421FinalProject\\Uplift\\Uplift.csproj",
       "packagesPath": "C:\\Users\\Kat\\.nuget\\packages\\",
-      "outputPath": "C:\\Junior Year\\MIS 431\\Lecture 9 - End\\Uplift\\obj\\",
+      "outputPath": "C:\\Junior Year\\MIS 431\\421FinalProject\\Uplift\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Kat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9935,8 +9935,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Junior Year\\MIS 431\\Lecture 9 - End\\Uplift.DataAccess\\Uplift.DataAccess.csproj": {
-              "projectPath": "C:\\Junior Year\\MIS 431\\Lecture 9 - End\\Uplift.DataAccess\\Uplift.DataAccess.csproj"
+            "C:\\Junior Year\\MIS 431\\421FinalProject\\Uplift.DataAccess\\Uplift.DataAccess.csproj": {
+              "projectPath": "C:\\Junior Year\\MIS 431\\421FinalProject\\Uplift.DataAccess\\Uplift.DataAccess.csproj"
             }
           }
         }
