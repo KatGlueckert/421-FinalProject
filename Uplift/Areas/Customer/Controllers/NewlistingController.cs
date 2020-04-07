@@ -10,26 +10,16 @@ using Uplift.Models;
 namespace Uplift.Controllers
 {
     [Area("Customer")]
-    public class HomeController : Controller
+    public class NewlistingController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<NewlistingController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public NewlistingController(ILogger<NewlistingController> logger)
         {
             _logger = logger;
         }
-        
+
         public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult About()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
         {
             return View();
         }
