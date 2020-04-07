@@ -23,6 +23,14 @@
 
 
   <ItemGroup>
+    <Folder Include="Areas\Customer\Views\Items\" />
+    <Folder Include="Areas\Customer\Views\User\" />
+    <Folder Include="Areas\Customer\Views\Results\" />
+    <Folder Include="Areas\Customer\Views\Cart\" />
+    <Folder Include="Areas\Customer\Views\Checkout\" />
+    <Folder Include="Areas\Customer\Views\Login\" />
+    <Folder Include="Areas\Customer\Views\Newlisting\" />
+    <Folder Include="Areas\Admin\Views\AdminUser\" />
     <Folder Include="Areas\Admin\Controllers\" />
   </ItemGroup>
 
@@ -31,4 +39,8 @@
     <ProjectReference Include="..\Uplift.DataAccess\Uplift.DataAccess.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Remove="Areas\Admin\Views\Cart\Index.cshtml" />
+    <Content Remove="Areas\Admin\Views\Adminuser\Index.cshtml" />
+  </ItemGroup>
 </Project>
