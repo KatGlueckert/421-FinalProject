@@ -26,8 +26,6 @@
     <Folder Include="Areas\Customer\Views\Items\" />
     <Folder Include="Areas\Customer\Views\User\" />
     <Folder Include="Areas\Customer\Views\Results\" />
-    <Folder Include="Areas\Customer\Views\Cart\" />
-    <Folder Include="Areas\Customer\Views\Checkout\" />
     <Folder Include="Areas\Customer\Views\Login\" />
     <Folder Include="Areas\Customer\Views\Newlisting\" />
     <Folder Include="Areas\Admin\Views\AdminUser\" />
