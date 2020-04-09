@@ -13,10 +13,6 @@ body {
   color: #444;
 }
 
-a {
-  color: #4fa6d5;
-}
-
 a:hover {
   color: #45beff;
   text-decoration: none;
@@ -30,17 +26,17 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
-  position: fixed;
-  display: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 3px;
-  right: 15px;
-  bottom: 15px;
-  background: #68A4C4;
-  color: #fff;
-  transition: display 0.5s ease-in-out;
-  z-index: 99999;
+    position: fixed;
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    right: 15px;
+    bottom: 15px;
+    background: #68A4C4;
+    color: #fff;
+    transition: display 0.5s ease-in-out;
+    z-index: 99999;
 }
 
 .back-to-top i {
@@ -69,7 +65,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 #header.header-transparent {
-  background: none;
+    background: rgba(30, 67, 86, 0.8);
 }
 
 #header.header-scrolled {

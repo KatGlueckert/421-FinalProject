@@ -5,13 +5,14 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Moderna Bootstrap Template - Index</title>
+    <title>Xchange</title>
     <meta content="" name="descriptison">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="/assets/img/favicon.png" rel="icon">
-    <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="/assets/img/X180.png" rel="icon">
+    <link href="/assets/img/X180.png" rel="apple-touch-icon">
+    <link href="/assets/img/MessagesIcon.png" rel="messagesicon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
@@ -39,46 +40,33 @@
 <body>
 
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top header-transparent">
+    <header id="header" class="fixed-top header">
         <div class="container">
-
-            <div class="logo float-left">
-                <h1 class="text-light"><a href="index.html"><span>Moderna</span></a></h1>
-                <!-- Uncomment below if you prefer to use an image logo -->
-                <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-            </div>
-
-            <nav class="nav-menu float-right d-none d-lg-block">
-                <ul>
-                    <li class="active">@Html.ActionLink("Home Page", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li class="drop-down">
-                        <a href="">Drop Down</a>
+            <div class="d-flex align-items-right">
+                <div class="col-lg-3">
+                    <h1 class="text-light"><a href="index.html"><span style="padding-left:15px;padding-bottom:10px;color:#FFFFFF">XCHANGE</span></a></h1>
+                    <!-- Uncomment below if you prefer to use an image logo -->
+                    <!-- <a href="index.html"><img src="assets/img/Xchange500.png" alt="XChange logo" class="img-fluid"></a> -->
+                </div>
+                <div class="col-lg-5">
+                    <form action="">
+                        <div class="d-flex align-items-center">
+                            <input type="text" style="max-width: 500px;width: 100%;margin-top: 5px;border-radius:3px;" placeholder="Items...">
+                            <button class="btn" type="submit" style="background-color:lightblue;line-height:1;margin-top:5px;margin-left:5px">Go</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3">
+                    <nav class="nav-menu float-right d-none d-lg-block">
                         <ul>
-                            <li><a href="#">Drop Down 1</a></li>
-                            <li class="drop-down">
-                                <a href="#">Drop Down 2</a>
-                                <ul>
-                                    <li><a href="#">Deep Drop Down 1</a></li>
-                                    <li><a href="#">Deep Drop Down 2</a></li>
-                                    <li><a href="#">Deep Drop Down 3</a></li>
-                                    <li><a href="#">Deep Drop Down 4</a></li>
-                                    <li><a href="#">Deep Drop Down 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Drop Down 3</a></li>
-                            <li><a href="#">Drop Down 4</a></li>
-                            <li><a href="#">Drop Down 5</a></li>
+                            <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("Your Profile", "Index", "User")</li>
+                            <li>@Html.ActionLink("Sell!", "Index", "Newlisting")</li>
                         </ul>
-                    </li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav><!-- .nav-menu -->
-
+                    </nav><!-- .nav-menu -->
+                </div>
+                <div class="col-sm-3"><a href="/Customer/User"><img src="/assets/img/MessagesIcon.png" alt="MessagesIcon" style="width:40px;height:40px;margin-bottom:35px"></a></div>
+            </div>
         </div>
     </header><!-- End Header -->
 
