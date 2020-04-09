@@ -69,3 +69,47 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+/*OUR CSS*/
+
+.si-column {
+    float: left;
+    padding: 10px;
+    height: 100%;
+    padding-top: 100px;
+}
+
+.si-left {
+    
+    width: 65%;
+}
+
+.si-right {
+    
+    width: 35%;
+}
+
+.si-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#si-main-image {
+    height: 525px;
+    width: 550px;
+    object-fit: cover;
+    padding-bottom: 30px;
+}
+
+.miniImage {
+    margin-left: 56px;
+    width: 105px;
+    height: 105px;
+}
+
+#imageGallery {
+    padding: 22px 0px 23px 0px;
+    width: 550px;
+    height: 150px;
+}
