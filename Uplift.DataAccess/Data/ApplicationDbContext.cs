@@ -12,5 +12,6 @@ namespace Uplift.DataAccess.Data
             : base(options)
         {
         }
+        public DbSet<Pizza> Pizza { get; set; }
     }
 }
