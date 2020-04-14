@@ -108,8 +108,24 @@ body {
     height: 105px;
 }
 
+#si-Title {
+    color: #1e4356;
+}
+
+#si-Price {
+    color:lime;
+}
+
 #imageGallery {
     padding: 22px 0px 23px 0px;
     width: 550px;
     height: 150px;
+}
+
+#si-Button {
+    background: #68A4C4;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
 }
