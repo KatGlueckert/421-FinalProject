@@ -12,8 +12,9 @@ namespace Uplift.DataAccess.Data
             : base(options)
         {
         }
-        public DbSet<Items> Items { get; set; }
+        public DbSet<Item> Items { get; set; }
 
+        // Note 4/15/2020 (Ryland): This may cause issues with the built-in keyword "Users", maybe use "Customers" instead?
         public DbSet<Users> Users {get; set;}
     }
 }
