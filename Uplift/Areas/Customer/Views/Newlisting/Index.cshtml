@@ -1,48 +1,75 @@
 ﻿@{
     ViewData["Title"] = "Newlisting";
 }
+<div id="newlistingDiv" style="padding-top: 100px; width: 400px; margin:auto; display: block;">
+    <form action="">
 
-<main id="main">
-
-    <!-- ======= Services Section ======= -->
-    <section class="services">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
-                    <div class="icon-box icon-box-pink">
-                        <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                        <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                    <div class="icon-box icon-box-cyan">
-                        <div class="icon"><i class="bx bx-file"></i></div>
-                        <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-                        <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                    <div class="icon-box icon-box-green">
-                        <div class="icon"><i class="bx bx-tachometer"></i></div>
-                        <h4 class="title"><a href="">Magni Dolores</a></h4>
-                        <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                    <div class="icon-box icon-box-blue">
-                        <div class="icon"><i class="bx bx-world"></i></div>
-                        <h4 class="title"><a href="">Nemo Enim</a></h4>
-                        <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-                    </div>
-                </div>
-
-            </div>
-
+        <div style="width:100%;">
+            <h3 style="color:#1e4356">POST THAT AWESOME ITEM!</h3>
         </div>
-    </section><!-- End Services Section -->
-</main>
+
+        <div class="align-items-center" style="margin-bottom:10px;">
+            <div>
+                <label for="title" style="margin-bottom: 0;">Title</label>
+            </div>
+            <input type="text" id="nlInput1" name="title" placeholder="Product Title"
+                   style="margin-top: 3px;width:100%;border-radius:4px;">
+        </div>
+
+
+
+        <div class="align-items-center" style="margin-bottom:10px;">
+            <div>
+                <label for="price" style="margin-bottom: 0;">Price</label>
+            </div>
+            <input type="text" id="nlInput2" name="price" placeholder="Product Price"
+                   style="margin-top: 3px;width:100%;border-radius:4px;">
+        </div>
+
+
+
+        <div class="align-items-center" style="margin-bottom:10px;">
+            <div>
+                <label for="itemDescription" style="margin-bottom: 0;">Description</label>
+            </div>
+            <textarea type="text" rows="5" id="nlInput3" name="itemDescription" placeholder="Product Description"
+                   style="margin-top: 3px;width:100%;border-radius:4px;"></textarea>
+        </div>
+
+
+
+        <div class="align-items-center" style="margin-bottom:10px;">
+            <div>
+                <label for="productType" style="margin-bottom: 3px;">Product Type</label>
+            </div>
+            <select id="product-type-input" name="productType">
+                <option value="Supplies">Supplies</option>
+                <option value="Dorm Furniture">Dorm Furniture</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Clothes-Men">Men's Clothing</option>
+                <option value="Clothes-Women">Women's Clothing</option>
+                <option value="Clothes-Accessories">Accessories</option>
+                <option value="Services">Services</option>
+            </select>
+        </div>
+
+        <div class="align-items-center" style="margin-bottom:10px;">
+            <label for="itemImage" style="margin-bottom: 3px;">Choose images for your item!</label>
+            <button type="button" (click)="filePicker1.click()" style="visibility:hidden"></button>
+            <input type="file" name="itemImage1" #filePicker1 style="margin-bottom: 5px">
+            <button type="button" (click)="filePicker2.click()" style="visibility:hidden"></button>
+            <input type="file" name="itemImage2" #filePicker2 style="margin-bottom: 5px">
+            <button type="button" (click)="filePicker3.click()" style="visibility:hidden"></button>
+            <input type="file" name="itemImage3" #filePicker3 style="margin-bottom: 5px">
+            <!--goes in input tag above if useful (change)="onImagePicked($event)"-->
+        </div>
+
+        <div style="width:100%; justify-content:center;margin-bottom:10px;">
+            <center>
+                <input id="si-Button" style="margin-top: 20px" type="submit" value="Submit">
+            </center>
+        </div>
+
+</form>
+</div>
+            

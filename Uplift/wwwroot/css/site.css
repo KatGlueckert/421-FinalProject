@@ -142,3 +142,13 @@ body {
 #si-Title {
     color: #1e4356;
 }
+
+/*NEW LISTING*/
+
+#newlistingDiv {
+    padding-top: 100px;
+    width: 100%;
+    display: block;
+}
+
+
