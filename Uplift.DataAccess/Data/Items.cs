@@ -3,18 +3,26 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Uplift.DataAccess.Data
 {
-    public class Items
+    public class Item
     {
+
+        // Perhaps we should add "title" "price" and "deleted" attributes?
+        // Also, I don't think itemDescription should be required.
+
         [Key]
         [Required]
-        public Guid itemID { get; set; }
+        public Guid ItemID { get; set; }
 
         [Required]
-        public string itemDescription { get; set; }
+        public string Title { get; set; }
 
         [Required]
-        public DateTime dateSold { get; set; }
+        public double Price { get; set; }
 
-        public int itemsSold {get; set;}
+        public string ItemDescription { get; set; }
+
+        public DateTime DateSold { get; set; }
+
+        public int ItemsSold {get; set;}
     }
 }
