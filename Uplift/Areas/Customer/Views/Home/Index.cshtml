@@ -1,263 +1,79 @@
-﻿    @model List<Uplift.DataAccess.Data.Item> 
-    @{
-        ViewData["Title"] = "Home Page";
-    }
+﻿@model dynamic
+@{
+    ViewData["Title"] = "Home Page";
+}
 
 
-    <!--
-
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
-                        <a href="/Customer/Items/" style="color:inherit">
-                            <div class="icon-box icon-box-blue">
-                                <div><img src="/assets/img/Xchange180.png" alt="Logo" style="max-width:100px;max-height:100px;margin-bottom:10px"></div>
-                                <h4 class="title">Furniture!! DM for info </h4>
-                                <p style="color:lightgray">Price: $75</p>
-                                <p class="description">Selling furniture from my dorm that I'm moving out of. All good condition, contact me!</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
-                        <div class="icon-box icon-box-pink">
-                            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                        <div class="icon-box icon-box-cyan">
-                            <div class="icon"><i class="bx bx-file"></i></div>
-                            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-                            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon-box icon-box-green">
-                            <div class="icon"><i class="bx bx-tachometer"></i></div>
-                            <h4 class="title"><a href="">Magni Dolores</a></h4>
-                            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon-box icon-box-blue">
-                            <div class="icon"><i class="bx bx-world"></i></div>
-                            <h4 class="title"><a href="">Nemo Enim</a></h4>
-                            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-                        </div>
-                    </div>
-
-
-    -->
-
-
-    <main id="main">
-
-        <!-- ======= Services Section ======= -->
-        <section class="services">
-            <div class="container" style="border-color:#397fa2; border-radius:5px; border-width:medium; border-style:solid; padding:12px; margin-top:30px">
-                <h2>Featured Items</h2>
-
-
-                <div class="row" id="tiles-div">
-
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
-                        <a href="/Customer/Items/" style="color:inherit">
-                            <div class="icon-box icon-box-blue">
-                                <div><img src="/assets/img/Xchange180.png" alt="Logo" style="max-width:100px;max-height:100px;margin-bottom:10px"></div>
-                                <h4 class="title">Furniture!! DM for info </h4>
-                                <p style="color:lightgray">Price: $75</p>
-                                <p class="description">Selling furniture from my dorm that I'm moving out of. All good condition, contact me!</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <script type="text/javascript">var i;
-
-                        for (i = 0; i < 7; i++) {
-                            var divCol = document.createElement('div');
-                            var divAtt = document.createAttribute('class');
-                            divAtt.value = 'col-md-6 col-lg-3 d-flex align-items-stretch';
-                            divCol.setAttributeNode(divAtt);
-                            divAtt = document.createAttribute('data-aos');
-                            divAtt.value = 'fade-up';
-                            divCol.setAttributeNode(divAtt);
-                            divAtt = document.createAttribute('data-aos-delay');
-                            divAtt.value = '200';
-                            divCol.setAttributeNode(divAtt);
-
-                            var itemLink = document.createElement('a');
-                            linkAtt = document.createAttribute('href');
-                            linkAtt.value = '/Customer/Items/';
-                            itemLink.setAttributeNode(linkAtt);
-                            linkAtt = document.createAttribute('style');
-                            linkAtt.value = "color:inherit;";
-                            itemLink.setAttributeNode(linkAtt);
-
-                            var divBox = document.createElement('div');
-                            divAtt = document.createAttribute('class');
-                            divAtt.value = 'icon-box icon-box-blue';
-                            divBox.setAttributeNode(divAtt);
-
-                            var divImage = document.createElement('div');
-
-                            var img = document.createElement("img");
-                            imgAtt = document.createAttribute('src');
-                            imgAtt.value = '/assets/img/Xchange180.png';
-                            img.setAttributeNode(imgAtt);
-
-                            imgAtt = document.createAttribute('alt');
-                            imgAtt.value = 'Item image';
-                            img.setAttributeNode(imgAtt);
-
-                            imgAtt = document.createAttribute('style');
-                            imgAtt.value = 'max-width:100px;max-height:100px;margin-bottom:10px';
-                            img.setAttributeNode(imgAtt);
-
-                            var h4Title = document.createElement("h4");
-                            h4Att = document.createAttribute('class');
-                            h4Att.value = 'title';
-                            h4Title.setAttributeNode(h4Att);
-                            h4Title.textContent = "Nemo Enima";
-
-
-                            var price = document.createElement("p");
-                            priceAtt = document.createAttribute('style');
-                            priceAtt.value = 'color:lightgrey;';
-                            price.setAttributeNode(priceAtt);
-                            price.textContent = "Price: $99.99";
-
-                            var desc = document.createElement("p");
-                            descAtt = document.createAttribute('class');
-                            descAtt.value = 'description';
-                            desc.setAttributeNode(descAtt);
-                            desc.textContent = "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque";
-
-                            divImage.appendChild(img);
-                            divBox.appendChild(divImage);
-                            divBox.appendChild(h4Title);
-                            divBox.appendChild(price)
-                            divBox.appendChild(desc);
-                            itemLink.appendChild(divBox);
-                            divCol.appendChild(itemLink);
-
-                            var div = document.getElementById("tiles-div");
-                            div.appendChild(divCol);
-                        }</script>
-                </div>
-
+<script type="text/javascript" src="~/js/script.js"></script>
+<main id="main">
+    
+    <section class="services">
+        <div class="container" id="Featured-items-container" style="border-color:#397fa2; border-radius:5px; border-width:medium; border-style:solid; padding:12px; margin-top:30px; margin-bottom:20px;">
+            <h2>Featured Items</h2>
+            <div class="row" id="Featured-items">
+                @foreach(var Item in Model.FeaturedItems){
+                    <script>loadItem('@Item.Title', '@Item.ItemDescription', '@Item.Price', "Featured-items", 0)</script>}
             </div>
-        </section><!-- End Services Section -->
-        <!-- ======= Why Us Section ======= -->
-        <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
-            <input type="email" name="email"><input type="submit" value="Go!">
-            <div class="container">
+        </div>
 
-                <div class="row">
-                    <div class="col-lg-6 video-box">
-                        <img src="assets/img/why-us.jpg" class="img-fluid" alt="">
-                        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
-                    </div>
-
-                    <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
-
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-fingerprint"></i></div>
-                            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                        </div>
-
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-gift"></i></div>
-                            <h4 class="title"><a href="">Nemo Enim</a></h4>
-                            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-                        </div>
-
-                    </div>
-                </div>
-
+        <div class="container" id="home-page-container">
+            <h3><a href="/Customer/Results" style="color:grey">Supplies (see more)</a></h3>
+            <div class="row" id="Supplies-items">
+                @foreach (var Item in Model.SuppliesItems){
+                    <script>loadItem('@Item.Title', '@Item.ItemDescription', '@Item.Price', "Supplies-items", 0)</script>}
             </div>
-        </section><!-- End Why Us Section -->
-        <!-- ======= Features Section ======= -->
-        <section class="features">
-            <div class="container">
 
-                <div class="section-title">
-                    <h2>Features</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                </div>
-
-                <div class="row" data-aos="fade-up">
-                    <div class="col-md-5">
-                        <img src="assets/img/features-1.svg" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-md-7 pt-4">
-                        <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-                        <p class="font-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.
-                        </p>
-                        <ul>
-                            <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                            <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="row" data-aos="fade-up">
-                    <div class="col-md-5 order-1 order-md-2">
-                        <img src="assets/img/features-2.svg" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-md-7 pt-5 order-2 order-md-1">
-                        <h3>Corporis temporibus maiores provident</h3>
-                        <p class="font-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.
-                        </p>
-                        <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row" data-aos="fade-up">
-                    <div class="col-md-5">
-                        <img src="assets/img/features-3.svg" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-md-7 pt-5">
-                        <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
-                        <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
-                        <ul>
-                            <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                            <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                            <li><i class="icofont-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="row" data-aos="fade-up">
-                    <div class="col-md-5 order-1 order-md-2">
-                        <img src="assets/img/features-4.svg" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-md-7 pt-5 order-2 order-md-1">
-                        <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
-                        <p class="font-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.
-                        </p>
-                        <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum
-                        </p>
-                    </div>
-                </div>
-
+            <h3><a href="/Customer/Results" style="color:grey">Dorm Furniture (see more)</a></h3>
+            <div class="row" id="Dorm-Furniture-items">
+                @foreach (var Item in Model.DormFurnitureItems){
+                    <script>loadItem('@Item.Title', '@Item.ItemDescription', '@Item.Price', "Dorm-Furniture-items", 0)</script>}
             </div>
-        </section><!-- End Features Section -->
 
-    </main><!-- End #main -->
+            <h3><a href="/Customer/Results" style="color:grey">Electronics (see more)</a></h3>
+            <div class="row" id="Electronics-items">
+                @foreach (var Item in Model.ElectronicsItems){
+                    <script>loadItem('@Item.Title', '@Item.ItemDescription', '@Item.Price', "Electronics-items", 0)</script>}
+            </div>
+
+            <h3><a href="/Customer/Results" style="color:grey">Women's Clothing (see more)</a></h3>
+            <div class="row" id="Womens-Clothes-items">
+                 @foreach(var Item in Model.WomensClothesItems){
+                    <script>loadItem('@Item.Title', '@Item.ItemDescription', '@Item.Price', "Womens-Clothes-items", 0)</script>}
+            </div>
+            <h2 id="h2">ABC</h2>
+
+            <h3><a href="/Customer/Results" style="color:grey">Men's Clothing (see more)</a></h3>
+            <div class="row" id="Mens-Clothes-items">
+                 @foreach(var Item in Model.MensClothesItems){
+                    <script>loadItem('@Item.Title', '@Item.ItemDescription', '@Item.Price', "Mens-Clothes-items", 0)</script>}
+            </div>
+
+            <h3><a href="/Customer/Results" style="color:grey">Accessories (see more)</a></h3>
+            <div class="row" id="Accessories-items">
+                 @foreach(var Item in Model.AccessoriesItems){
+                    <script>loadItem('@Item.Title', '@Item.ItemDescription', '@Item.Price', "Accessories-items", 0)</script>}
+            </div>
+
+            <h3><a href="/Customer/Results" style="color:grey">Services (see more)</a></h3>
+            <div class="row" id="Services-items">
+                 @foreach(var Item in Model.ServicesItems){
+                    <script>loadItem('@Item.Title', '@Item.ItemDescription', '@Item.Price', "Services-items", 0)</script>}
+            </div>
+
+            <h3><a href="/Customer/Results" style="color:grey">Other (see more)</a></h3>
+            <div class="row" id="Other-items">
+                 @foreach(var Item in Model.OtherItems){
+                    <script>loadItem('@Item.Title', '@Item.ItemDescription', '@Item.Price', "Other-items")</script>}
+            </div>
+
+            <h3><a href="/Customer/Results" style="color:grey">Browse All (see more)</a></h3>
+            <div class="row" id="Browse-All-items">
+                 @foreach(var Item in Model.BrowseAllItems){
+                    <script>loadItem('@Item.Title', '@Item.ItemDescription', '@Item.Price', "Browse-All-items")</script>}
+            </div>
+            
+        </div>
+
+    </section>
+
+</main><!-- End #main -->

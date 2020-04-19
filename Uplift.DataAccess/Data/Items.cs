@@ -17,6 +17,7 @@ namespace Uplift.DataAccess.Data
         public string Title { get; set; }
 
         [Required]
+        [DataType(DataType.Currency)]
         public double Price { get; set; }
 
         public string ItemDescription { get; set; }

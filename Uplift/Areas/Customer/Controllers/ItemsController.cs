@@ -10,7 +10,6 @@ using Uplift.Models;
 
 namespace Uplift.Controllers
 {
-
     [Area("Customer")]
     public class ItemsController : Controller
     {
