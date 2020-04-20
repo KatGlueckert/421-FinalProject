@@ -87,7 +87,11 @@ hr {
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 0.5rem;
-}
+}a
+
+    h3:hover {
+        color: #397fa2;
+    }
 
 p {
     margin-top: 0;
@@ -169,7 +173,7 @@ a {
 }
 
     a:hover {
-        color: #00526e;
+        color: #00526e !important;
         text-decoration: underline;
     }
 

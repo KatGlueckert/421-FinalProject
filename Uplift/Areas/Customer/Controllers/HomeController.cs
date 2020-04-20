@@ -72,7 +72,6 @@ namespace Uplift.Controllers
             ItemsList.OtherItems = OtherItems;
             ItemsList.BrowseAllItems = BrowseAllItems;
 
-
             return View(ItemsList);
 
         }

@@ -9,13 +9,41 @@ function swapPic3() {
     $('#si-main-image').attr('src', $('#p3').attr('src'));
 }
 
+
+// FIX THIS FUNCTION ( PUT LOGIC IN IT ):
 $(window).scroll(function () {
     var scrolled = $(window).scrollTop() + $(window).height();
     var docheight = Math.round(($(document).height() * .7));
     if (scrolled > docheight && (window.location.href.includes("Customer/Results"))) {
-        alert(window.location.href);
+        // Do stuff
     }
 });
+
+function executeSearchQuery() {
+    var searchQuery = document.getElementById("search-query-input-box").value;
+    structured_search_query = searchQuery.replace(/\s+/g, '-').toLowerCase()
+    window.location = "/Customer/Results";
+}
+
+$('#search-query-input-box').keypress(function (e) {
+    if (e.keyCode == 13) {
+        executeSearchQuery();
+        e.preventDefault();
+    }
+});
+
+document.getElementById("search-query-submit-button").onclick = executeSearchQuery;
+
+
+
+// FIX THIS FUNCTION ( PUT LOGIC IN IT ):
+function sortResults() {
+    var p = document.createElement("p");
+    p.textContent = document.getElementById("sort-results-dropdown").value;
+    document.getElementById("Search-results-items-div").appendChild(p);
+}
+document.getElementById("sort-results-dropdown").onchange = sortResults;
+
 
 function loadItem(itemTitle, itemDesc, itemPrice, parentDiv, divNum) {
 
@@ -97,5 +125,3 @@ function loadItem(itemTitle, itemDesc, itemPrice, parentDiv, divNum) {
     var div = document.getElementById(parentDiv);
     div.appendChild(divCol);
 }
-
-
