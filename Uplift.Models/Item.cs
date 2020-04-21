@@ -15,7 +15,7 @@ namespace Uplift.Models
         [Required]
         public string Title { get; set; }
 
-        [Required]
+        
         [DataType(DataType.Currency)]
         public double Price { get; set; }
 
