@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Uplift.Models;
 
 namespace Uplift.DataAccess.Data
 {
@@ -12,9 +13,9 @@ namespace Uplift.DataAccess.Data
             : base(options)
         {
         }
-        public DbSet<Item> Items { get; set; }
+        public DbSet<Item> Item { get; set; }
 
         // Note 4/15/2020 (Ryland): This may cause issues with the built-in keyword "Users", maybe use "Customers" instead?
-        public DbSet<Users> Users {get; set;}
+        //public DbSet<Users> Users {get; set;}
     }
 }

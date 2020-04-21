@@ -12,10 +12,10 @@ namespace Uplift.DataAccess.Data.Repository
         public UnitOfWork(ApplicationDbContext db)
         {
             _db = db;
-            Category = new CategoryRepository(_db);
+            Item = new ItemRepository(_db);
         }
 
-        public ICategoryRepository Category { get; private set; }
+        public IItemRepository Item { get; private set; }
 
         public void Dispose()
         {

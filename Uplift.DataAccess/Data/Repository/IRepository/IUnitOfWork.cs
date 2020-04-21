@@ -7,7 +7,7 @@ namespace Uplift.DataAccess.Data.Repository
 {
     public interface IUnitOfWork : IDisposable
     {
-        ICategoryRepository Category { get; }
+        IItemRepository Item { get; }
 
         void Save();
     }

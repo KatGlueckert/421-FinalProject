@@ -1,13 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Text;
 
-namespace Uplift.DataAccess.Data
+namespace Uplift.Models
 {
-    public class Item
+     public class Item
     {
-
-        // Perhaps we should add "title" "price" and "deleted" attributes?
-        // Also, I don't think itemDescription should be required.
 
         [Key]
         [Required]
@@ -24,6 +23,6 @@ namespace Uplift.DataAccess.Data
 
         public DateTime DateSold { get; set; }
 
-        public int ItemsSold {get; set;}
+        public int ItemsSold { get; set; }
     }
 }
