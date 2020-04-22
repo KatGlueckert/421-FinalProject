@@ -10,6 +10,7 @@ function swapPic3() {
 }
 
 
+/*
 // FIX THIS FUNCTION ( PUT LOGIC IN IT ):
 $(window).scroll(function () {
     var scrolled = $(window).scrollTop() + $(window).height();
@@ -18,12 +19,15 @@ $(window).scroll(function () {
         // Do stuff
     }
 });
+*/
+
 
 function executeSearchQuery() {
     var searchQuery = document.getElementById("search-query-input-box").value;
-    structured_search_query = searchQuery.replace(/\s+/g, '-').toLowerCase()
+    structured_search_query = searchQuery.replace(/\s+/g, '-').toLowerCase();
     window.location = "/Customer/Results";
 }
+
 
 $('#search-query-input-box').keypress(function (e) {
     if (e.keyCode == 13) {
